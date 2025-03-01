@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+ <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+    <body id="top">
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+<style>
+    /* Make the header background cover the full width */
+    .header {
+      background-color: #0E254E; /* Oxford blue background */
+      width: 100%; /* Ensure it stretches across the full screen */
+      padding: 10px 0; /* Add vertical padding */
+    }
+  
+    .custom-wrapper {
+      max-width: 1400px; /* Keep the internal content contained */
+      margin: 0 auto; /* Center content */
+      padding: 0 20px; /* Add padding to prevent text from touching edges */
+    }
+  
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap; /* Allow wrapping if needed */
+    }
+  
+    /* Text Logo */
+    .logo {
+      font-size: 30px; /* Default size for large screens */
+      font-weight: bold;
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+    }
+  
+    /* Logo Image */
+    .logo img {
+      filter: brightness(0) invert(1); /* Make logo white */
+      width: 120px; /* Default logo size */
+      height: auto;
+    }
+  
+    .contact-social-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .contact-list, .social-list {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+  
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+  
+      /* Adjust the logo text size on mobile */
+      .logo {
+        font-size: 20px; /* Smaller logo text on mobile */
+        color: white; /* Ensure the text color remains white */
+      }
+  
+      /* Make the logo image smaller on mobile */
+      .logo img {
+        width: 80px; /* Smaller logo image for mobile */
+      }
+  
+      .contact-social-center {
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .contact-list,
+      .social-list {
+        justify-content: center;
+      }
+  
+      .appointment-btn {
+        margin-top: 10px;
+      }
+    }
+    /* Default styling for desktop */
+.contact-list {
+    display: flex;
+    gap: 10px;
+    font-size: 16px; /* Default text size */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.contact-item ion-icon {
+    font-size: 20px; /* Default icon size */
+    color: white; /* Icon color */
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Default text size */
+}
+
+/* Responsive: Adjust for small screens */
+@media (max-width: 768px) {
+    .contact-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .contact-item ion-icon {
+        font-size: 16px; /* Smaller icon */
+    }
+
+    .contact-link {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+  </style>
+  
+  <header class="header">
+    <div class="custom-wrapper">
+      <div class="header-top">
+              <!-- Logo on the left -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="/assets/images/dental-logo.png" alt="Logo" height="150" width="150">
+        </a>
+      </div>
+
+        <!-- Text Logo: All Smiles on Riverside -->
+        <div class="logo">
+          <a href="index.html">All Smiles on Riverside</a>
+        </div>
+  
+       <!-- Contact info and social links centered -->
+
+<div class="contact-social-center">
+    <ul class="contact-list">
+        <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:allsmilesonriverside@gmail.com" class="contact-link">allsmilesonriverside@gmail.com</a>
+        </li>
+        <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+19043840383" class="contact-link">+1-904-384-0383</a>
+        </li>
+    </ul>
+</div>
+
+
+
+        <ul class="social-list" style="display: flex; gap: 15px;">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61569677237376" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="map.html" class="social-link">
+              <ion-icon name="location-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:allsmilesonriverside.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+                <!-- Make appointment button on the right -->
+      <div class="appointment-btn">
+        <a href="form.html" class="btn" target="_blank">Make Appointment</a>
+      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+
+  
+
+
+
+<!--the body parts-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+            max-width: 250px;
+            height: auto;
+        }
+        h2 {
+            color: #2a5d84;
+        }
+        p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .message-from-doctor {
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <h2 style="text-align: center;">Start with a Great Smile</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            All Smiles On Riverside, 1550 Riverside Ave, Ste B, Jacksonville, FL 32204, is a premier dental clinic dedicated to providing advanced family dental care. Dental care has been served to Jacksonville from this location for over 25 years.
+            Our team of experienced professionals is committed to ensuring that each of our patients leaves our clinic with a brighter, healthier smile.
+        </p>
+        <br>
+        <table border="0" cellpadding="20" style="width: 100%;">
+          <tr>
+              <td style="width: 40%; vertical-align: top; text-align: center;">
+                  <img src="/assets/images/jas.jpeg" alt="Dr. Jasmine Shakya" style="width: 80%; max-width: 250px; border-radius: 10px;">
+                  <br>
+                  <div style="text-align: left; width: 100%; display: inline-block;">
+                      <strong>Dr. Jasmine Shakya</strong> <br>
+                      University of Minnesota <br>
+                      BDS, DDS
+                  </div>
+              </td>
+      
+                
+                <td style="width: 60%; vertical-align: top; column-span: 2;">
+                    <div class="message-from-doctor">
+                        <h3 style="color: black; margin-top: 0;">Message from Dr. Jasmine Shakya​</h3>
+                        <p>
+                            As the owner of All Smiles on Riverside, I am honored to continue the tradition of trust and exceptional care that has been established here. I graduated from the University of Minnesota Dental School and have had the privilege of practicing dentistry in Wichita, Kansas, and Albuquerque, New Mexico.
+                            As a wife and mother of two, I understand how important it is to create a comfortable and trustworthy environment for our patients. Our focus on patient comfort and personalized care is at the core of everything we do at All Smiles on Riverside.
+                        </p>
+                        <p>
+                            Our mission is simple: to deliver exceptional dental care with a focus on comfort, trust, and individualized attention. We aim to provide a warm, friendly atmosphere where every patient feels valued and their dental health is our top priority. At All Smiles on Riverside, we’re dedicated to building lasting relationships through high-quality care, skill, experience, and compassion.
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    
+
+
+
+<div class="" style="background-color: #E2F2FB; padding: 30px; border-radius: 10px;">
+
+    <center>
+        <h1 style="color: black; font-size: 28px;">Serving Patients with Dedication with Our Perfect Hands</h1>
+        <hr width="50%" size="2" color="black">
+    </center>
+
+    <br>
+    <p style="text-align: center; font-size: 18px; max-width: 800px; margin: auto;">
+        At <b>All Smiles on Riverside</b>, we are dedicated to serving our patients with unparalleled care and expertise. 
+        With our skilled hands and compassionate approach, we ensure every visit is a <b>comfortable and rewarding experience</b>, 
+        delivering <b>exceptional dental solutions</b> tailored to your unique needs.
+        
+        <br><br> 
+        <b style="color: black;">Your perfect smile is our priority!</b>
+    </p>
+    <br>
+
+    <ul style="list-style-type: none; padding: 0; text-align: center; max-width: 800px; margin: auto; color: black;">
+        <li style="margin-bottom: 20px;">
+            <h3 style="color: #0056b3;">✔ Expertise That You Can Trust In</h3>
+            <p style="text-align: center;">Our skilled dental team provides <b>reliable, high-quality care</b> backed by years of training and experience.</p>
+        </li>
+    
+        <li style="margin-bottom: 20px;">
+            <h3 style="color: #0056b3;">✔ Caring Professionals at Your Service</h3>
+            <p style="text-align: center;">We prioritize your <b>comfort and well-being</b>, delivering compassionate dental care tailored to your unique needs.</p>
+        </li>
+    
+        <li style="margin-bottom: 20px;">
+            <h3 style="color: #0056b3;">✔ A Comprehensive Approach to Dental Care</h3>
+            <p style="text-align: center;">From <b>preventive care to advanced treatments</b>, we address all aspects of oral health for a confident, lasting smile.</p>
+        </li>
+    
+        <li>
+            <h3 style="color: #0056b3;">✔ State-of-the-Art Solutions for a Healthier Smile</h3>
+            <p style="text-align: center;">Using <b>modern techniques and technology</b>, we ensure effective, precise, and comfortable treatments for optimal dental health and aesthetics.</p>
+        </li>
+    </ul>
+    
+
+</div>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+          
+
+          <a href="index.html" class="logo">All Smiles on Riverside</a>
+
+          <p class="footer-text">
+            Delivering smiles at affordable price.
+            <br>
+            Most PPO Insurances welcome.
+            <br>
+            We accept all major credit cards
+            Care 
+            <br>
+            Credit available
+          </p>
+
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+
+            <a href="schedule.html">
+            <span class="span">
+              Monday - Friday:<br>
+              9:00am - 5:00Pm <br>
+              Saturday - Sunday Closed
+            </span>
+          </a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Project</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Our Team</span>
+            </a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Dental Implants</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Oral Hygiene</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Full Mouth Reconstruction</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Emergency Dental Care</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Dentures</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Crowns and Bridges</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <a href="map.html">
+            <address class="item-text">
+              All Smiles On River Side, Jacksonville ,FL
+            </address>
+          </a>
+          </li>
+
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:904-384-0383" class="footer-link">904-384-0383</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:allsmilesonriverside.com" class="footer-link">allsmilesonriverside.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61569677237376" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.yelp.com/biz/all-smiles-on-riverside-jacksonville?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)/" class="social-link" target="_blank">
+              <i class="fab fa-yelp"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a href="mailto:allsmilesonrevireside.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>          
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

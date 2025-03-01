@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>Form</title>
+ <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+    <body id="top">
+
+  
+  <!-- 
+    - #HEADER
+  -->
+  <style>
+    /* Make the header background cover the full width */
+    .header {
+      background-color: #0E254E; /* Oxford blue background */
+      width: 100%; /* Ensure it stretches across the full screen */
+      padding: 10px 0; /* Add vertical padding */
+    }
+  
+    .custom-wrapper {
+      max-width: 1400px; /* Keep the internal content contained */
+      margin: 0 auto; /* Center content */
+      padding: 0 20px; /* Add padding to prevent text from touching edges */
+    }
+  
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap; /* Allow wrapping if needed */
+    }
+  
+    /* Text Logo */
+    .logo {
+      font-size: 30px; /* Default size for large screens */
+      font-weight: bold;
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+    }
+  
+    /* Logo Image */
+    .logo img {
+      filter: brightness(0) invert(1); /* Make logo white */
+      width: 120px; /* Default logo size */
+      height: auto;
+    }
+  
+    .contact-social-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .contact-list, .social-list {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+  
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+  
+      /* Adjust the logo text size on mobile */
+      .logo {
+        font-size: 20px; /* Smaller logo text on mobile */
+        color: white; /* Ensure the text color remains white */
+      }
+  
+      /* Make the logo image smaller on mobile */
+      .logo img {
+        width: 80px; /* Smaller logo image for mobile */
+      }
+  
+      .contact-social-center {
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .contact-list,
+      .social-list {
+        justify-content: center;
+      }
+  
+      .appointment-btn {
+        margin-top: 10px;
+      }
+    }
+    /* Default styling for desktop */
+.contact-list {
+    display: flex;
+    gap: 10px;
+    font-size: 16px; /* Default text size */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.contact-item ion-icon {
+    font-size: 20px; /* Default icon size */
+    color: white; /* Icon color */
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Default text size */
+}
+
+/* Responsive: Adjust for small screens */
+@media (max-width: 768px) {
+    .contact-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .contact-item ion-icon {
+        font-size: 16px; /* Smaller icon */
+    }
+
+    .contact-link {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+  </style>
+  
+  <header class="header">
+    <div class="custom-wrapper">
+      <div class="header-top">
+              <!-- Logo on the left -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="/assets/images/dental-logo.png" alt="Logo" height="150" width="150">
+        </a>
+      </div>
+
+        <!-- Text Logo: All Smiles on Riverside -->
+        <div class="logo">
+          <a href="index.html">All Smiles on Riverside</a>
+        </div>
+  
+       <!-- Contact info and social links centered -->
+       <div class="contact-social-center">
+        <ul class="contact-list">
+            <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:allsmilesonriverside@gmail.com" class="contact-link">allsmilesonriverside@gmail.com</a>
+            </li>
+            <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+19043840383" class="contact-link">+1-904-384-0383</a>
+            </li>
+        </ul>
+    </div>
+    
+        
+        <ul class="social-list" style="display: flex; gap: 15px;">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61569677237376" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="map.html" class="social-link">
+              <ion-icon name="location-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:allsmilesonriverside.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+
+
+
+
+<!--body-->
+    <style>
+        /* CSS to center content and style the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 50px;
+            background-color: ;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <br>
+<fieldset>
+    <div style="max-width: 400px; margin: auto; padding: 20px;">
+      <legend><h1 style="text-align: center; color: black;">Make an Appointment</h1>
+      </legend>
+      <form action="thanks.html">
+          
+        <br>
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required 
+              style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+          
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required 
+              style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+          
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" required 
+              style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
+          
+          <label for="comment">Comment (Optional):</label>
+          <textarea name="comment" id="comment" rows="4" 
+              style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;"></textarea>
+  
+          <button type="submit" 
+              style="width: 100%; padding: 10px; background-color:green; color: white; border: none; cursor: pointer;">
+              Submit
+          </button>
+          
+      </form>
+  </div>
+</fieldset>
+<br>
+
+ 
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">All Smiles on Riverside</a>
+
+          <p class="footer-text">
+            Delivering smiles at affordable price.
+            <br>
+            Most PPO Insurances welcome.
+            <br>
+            We accept all major credit cards
+            Care 
+            <br>
+            Credit available
+          </p>
+
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+
+            <a href="schedule.html">
+            <span class="span">
+              Monday - Friday:<br>
+              9:00am - 5:00Pm <br>
+              Saturday - Sunday Closed
+            </span>
+          </a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Project</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Our Team</span>
+            </a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Dental Implants</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Oral Hygiene</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Full Mouth Reconstruction</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Emergency Dental Care</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Dentures</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Crowns and Bridges</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <a href="map.html">
+            <address class="item-text">
+              All Smiles On River Side, Jacksonville ,FL
+            </address>
+          </a>
+          </li>
+
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:904-384-0383" class="footer-link">904-384-0383</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:allsmilesonriverside.com" class="footer-link">allsmilesonriverside.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61569677237376" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.yelp.com/biz/all-smiles-on-riverside-jacksonville?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)/" class="social-link" target="_blank">
+              <i class="fab fa-yelp"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a href="mailto:allsmilesonrevireside.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>          
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
