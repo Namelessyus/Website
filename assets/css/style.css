@@ -231,7 +231,7 @@
   }
   
   .header-bottom.active {
-    position:;
+    position:0;
     top: -81px;
     background-color: var(--white);
     box-shadow: var(--shadow-2);
