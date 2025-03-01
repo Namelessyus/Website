@@ -476,6 +476,25 @@
   .about-banner { margin-block-end: 50px; }
   
   .about .section-text-1 { margin-block: 25px 15px; }
+
+  /* Adjusting margin and padding between sections */
+
+/* Reducing the gap between doctor section and about section */
+.about {
+  padding-block-start: 0;  /* Remove top padding if needed */
+  padding-block-end: 0;    /* Remove bottom padding */
+}
+
+/* Reducing the bottom margin of the about-banner image */
+.about-banner {
+  margin-block-end: 20px; /* Reducing this to decrease space */
+}
+
+/* Reducing the margin between the section title and content */
+.about .section-text-1 {
+  margin-block: 15px 15px; /* Adjust the spacing here */
+}
+
   
   .about .btn {
     font-size: unset;
